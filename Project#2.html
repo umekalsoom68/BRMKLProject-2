@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+</head>
+<body>
+    <h1>Project -2</h1>
+    <script>
+        //Prblem !
+        function canVote(age) {
+    if (age >= 18) {
+        return "You are eligible to vote!";
+    } else {
+        return "You are not eligible to vote yet.";
+    }
+        }
+console.log(canVote(18)); 
+//problem 2
+function maxOfTwo(num1, num2) {
+    if (num1 >= num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+let largenumber = maxOfTwo(3, 5); 
+console.log(largenumber); 
+
+
+
+//Problem3
+   function isEvenOrOdd(number){
+if (number % 2 === 0) {
+return `${number} is even`;
+} else {
+return `${number} is odd`;
+}
+}
+
+console.log(isEvenOrOdd(6)); 
+console.log(isEvenOrOdd(13));
+//Problem 4
+
+function getGrade (score){
+    if(score >= 90 && score <= 100){
+        return("grade A");
+    } else if(score >= 80 && score <= 89){
+        return("grade B")
+    } else if(score >= 70 && score <= 79){
+    return("grade C")
+    } else if(score >= 60 && score <= 69){
+    return("grade D")
+    } else if(score >= 0 && score <= 59){
+    return("grade F")
+    }
+}
+const data =prompt("enter marks");
+const marks = (data);
+if (marks) {
+    const result = getGrade(marks);
+    console.log(result);
+    alert(result);
+} else {
+    console.log("please enter a valid marks");
+    alert("please enter a valid marks");
+}
+
+//Problem 5
+function greet(Sir){
+    return `Hello, ${Sir}! Welcome to my Project.`;
+}
+let name="Sir";
+let greetingmsg = greet(name);
+console.log(greetingmsg);
+//Problem 6
+function square(digit){
+    return digit * digit;
+}
+let dgt = 4;
+let squaredgt = square(dgt);
+console.log(squaredgt);
+//Problem 7
+function celciusToFahrenheit(celsius) {
+    let fahrenheit = celsius * 9 / 5 + 32;
+    return fahrenheit;
+}
+
+let tempInC = 30;
+let tempInF = celciusToFahrenheit(tempInC);
+console.log(tempInF); 
+//Problem 8
+function isPositive(number) {
+    if (number > 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isPositive(5)); 
+console.log(isPositive(-3)); 
+console.log(isPositive(0)); 
+//Patient Object data
+let patient = {
+    firstName: "Mr.",
+    lastName: "Chips",
+    age: 40,
+    gender: "Male",
+    height: 175, // in centimeters
+    weight: 75, // in kilograms
+    bloodType: "AB+",
+    allergies: ["lungs", "Penicillin"],
+    medications: ["Paracetamol", "Lisinopril"],
+    contact: {
+        phone: "0300-4765321",
+        email: "mrchipping123@gmail.com",
+        address: {
+            Country: "England",
+            city: "Brookfield",
+        }
+    }
+};
+
+console.log(`Patient Name: ${patient.firstName} ${patient.lastName}`);
+console.log(`Age: ${patient.age}`);
+console.log(`Gender: ${patient.gender}`);
+console.log(`Height: ${patient.height} cm`);
+console.log(`Weight: ${patient.weight} kg`);
+console.log(`Blood Type: ${patient.bloodType}`);
+console.log(`Allergies: ${patient.allergies.join(", ")}`);
+console.log(`Medications: ${patient.medications.join(", ")}`);
+console.log(`Phone: ${patient.contact.phone}`);
+console.log(`Email: ${patient.contact.email}`);
+console.log(`Address: ${patient.contact.address.Country}, ${patient.contact.address.city},`);
+//Student Object
+let student = {
+    firstName: "Um-e-Kalsoom",
+    lastName: "Rizvia",
+    age: 18,
+    gender: "Female",
+    grade: "12th",
+    subjects: ["Chemistry", "Physics", "Biology"],
+    contact: {
+        phone: "92 334 2047157",
+        email: "muhammadmoin576@gmai.com",
+        address: {
+            province: "Punjab",
+            city: "Bahawalpur",
+        }
+    }
+};
+
+console.log(`Student Name: ${student.firstName} ${student.lastName}`);
+console.log(`Age: ${student.age}`);
+console.log(`Gender: ${student.gender}`);
+console.log(`Grade: ${student.grade}`);
+console.log(`Subjects: ${student.subjects.join(", ")}`);
+console.log(`Phone: ${student.contact.phone}`);
+console.log(`Email: ${student.contact.email}`);
+console.log(`Address:  ${student.contact.address.city}, ${student.contact.address.province}`);
+
+    </script>
+</body>
+</html>
